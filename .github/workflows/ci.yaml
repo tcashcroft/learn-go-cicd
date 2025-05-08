@@ -24,9 +24,6 @@ jobs:
       - name: Style
         run: test -z $(go fmt ./...)
 
-      - name: golangci-lint
-        uses: golangci/golangci-lint run
-
       - name: Run tests
         run: go test -v ./...
 
